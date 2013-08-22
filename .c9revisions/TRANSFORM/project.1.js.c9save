@@ -1,0 +1,1 @@
+{"ts":1377174268530,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"var through = require('through');\r\nvar write = function (buf){\r\n    var strbuf = buf.toString().toUpperCase();\r\n    this.queue(strbuf);\r\n};\r\nvar tr = through(write);\r\nprocess.stdin.pipe(tr).pipe(process.stdout);\r\n"]],"start1":0,"start2":0,"length1":0,"length2":213}]],"length":213}
